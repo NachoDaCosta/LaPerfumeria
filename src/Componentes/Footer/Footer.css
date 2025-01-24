@@ -1,0 +1,77 @@
+
+
+/* Estilo para PC (pantallas grandes) */
+@media (min-width: 1025px) {
+    footer {
+        margin-top: 40px;
+        height: 200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 10%;
+        justify-content:flex-start;
+        align-items: center;
+        color: rgb(165, 56, 124);
+        font-weight: bold;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .icon {
+        font-size: 28px;
+        color: rgb(165, 56, 124);
+    }
+
+    .column-footer {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: repeat(2,50%);
+    }
+}
+
+/* Estilo para tablet (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 30px;
+    }
+
+    .icon {
+        font-size: 22px;
+        /* Íconos más pequeños en tablets */
+        margin: 5px 10px;
+        /* Espaciado reducido */
+    }
+}
+
+/* Estilo para iPhone (pantallas pequeñas) */
+@media (max-width: 767px) {
+    footer {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: center;
+        color: rgb(165, 56, 124);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .icon {
+        color: rgb(165, 56, 124);
+        font-size: 30px;
+        text-align: center;
+    }
+
+        .column-footer {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-rows: 50% 50%;
+            height: 100%;
+            width: 100%;
+        }
+}

@@ -1,0 +1,16 @@
+
+
+/* Estilo para PC (pantallas grandes) */
+@media (min-width: 1025px) {
+  
+}
+
+/* Estilo para tablet (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+/* Estilo para iPhone (pantallas pequeñas) */
+@media (max-width: 767px) {
+  
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+
+/* Estilo para PC (pantallas grandes) */
+@media (min-width: 1025px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: rgb(165, 56, 124);
+    }
+
+    
+
+    .icon-nav {
+        height: 25px;
+        font-size: 24px;
+        color: rgb(165, 56, 124);
+        width: auto;
+    }
+
+    .icon-nav:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        color: rgb(212, 67, 157);
+
+    }
+
+    .nav-derecha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        height: 100%;
+    }
+
+    .nav-centro {
+        font-family: "Playwrite VN", serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        height: 100%;
+        font-weight: bolder;
+        font-size: 24px;
+        
+    }
+
+    .nav-izquierda {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        height: 100%;
+    }
+
+}
+
+/* Estilo para tablet (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: rgb(165, 56, 124);
+    }
+
+    .icon-nav {
+        height: 30px;
+        font-size: 24px;
+        color: rgb(165, 56, 124);
+        width: auto;
+    }
+
+    .nav-derecha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 100%;
+        
+    }
+
+    .nav-centro {
+        font-family: "Playwrite VN", serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        height: 100%;
+        font-weight: bolder;
+        font-size: 24px;
+
+    }
+
+    .nav-izquierda {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        height: 100%;
+    }
+}
+
+/* Estilo para iPhone (pantallas pequeñas) */
+@media (max-width: 767px) {
+    nav {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        align-items: center;
+        justify-items: center;
+        background-color: rgb(246, 234, 242);
+        height: auto;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        color: rgb(165, 56, 124);
+    }
+
+    .nav-derecha {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+        height: 100%;
+        font-size: 8px;
+    }
+
+    .nav-centro {
+        font-family: "Playwrite VN", serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        height: 100%;
+        font-weight: bolder;
+        font-size: 15px;
+
+    }
+
+    .nav-izquierda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        height: 100%;
+        font-size: 8px;
+    }
+
+    .icon-nav {
+        height: 20px;
+        font-size: 24px;
+        color: rgb(165, 56, 124);
+        width: auto;
+    }
+}
